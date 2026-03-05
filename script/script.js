@@ -50,5 +50,10 @@ items.addEventListener('click', function (event) {
   if (event.target.closest('.delete-button')) {
     const itemToDelete = event.target.closest('li');
     itemToDelete.remove();
+    alert.style.display = 'flex';
   }
+});
+
+alert.querySelector('button').addEventListener('click', function () {
+  alert.style.display = 'none';
 });
