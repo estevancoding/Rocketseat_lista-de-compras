@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de compras</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+    <section id="status-bar" class="flex">
+      <img src="assets/9_41.png" alt="" />
+      <div class="flex">
+        <img src="assets/wifi.png" alt="" />
+        <img src="assets/4g.png" alt="" />
+        <img src="assets/Light.png" alt="" />
+      </div>
+    </section>
+
+    <main>
+
+        <div class="flex" id="title">
+            <img src="assets/logo.png" alt="">
+            <h1>quicklist</h1>
+        </div>
+
+      <header class="flex">
+        <a class="flex" href="#"
+          ><img src="assets/link button.png" alt="" />Voltar</a>
+        <h1>Compras da semana</h1>
+      </header>
+
+      <form class="flex">
+        <input type="text" id="form-input" placeholder="Adicione um novo item" />
+        <button>Adicionar item</button>
+      </form>
+
+      <ul id="item-container" class="flex">
+        <li class="flex">
+          <div class="flex">
+            <input type="checkbox" name="item-1" id="item-1" />
+            <label for="item-1">Pão de forma</label>
+          </div>
+          <button type="button" class="delete-button">
+            <img src="assets/Frame.png" alt="" />
+          </button>
+        </li>
+
+        <li class="flex">
+          <div class="flex">
+            <input type="checkbox" name="item-2" id="item-2" />
+            <label for="item-2">Café preto</label>
+          </div>
+          <button type="button" class="delete-button">
+            <img src="assets/Frame.png" alt="" />
+          </button>
+        </li>
+
+        <li class="flex">
+          <div class="flex">
+            <input type="checkbox" name="item-3" id="item-3" />
+            <label for="item-3">Suco de laranja</label>
+          </div>
+          <button type="button" class="delete-button">
+            <img src="assets/Frame.png" alt="" />
+          </button>
+        </li>
+
+        <li class="flex">
+          <div class="flex">
+            <input type="checkbox" name="item-4" id="item-4" />
+            <label for="item-4">Bolacha</label>
+          </div>
+          <button type="button" class="delete-button">
+            <img src="assets/Frame.png" alt="" />
+          </button>
+        </li>
+      </ul>
+
+      <div id="alert" class="flex">
+        <div class="flex">
+          <img src="assets/warning-circle-filled.png" alt="" />
+          <span>O item foi removido da lista</span>
+        </div>
+        <button type="button" aria-label="Fechar alerta">
+          <img src="assets/delete-small.png" alt="" />
+        </button>
+      </div>
+    </main>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
